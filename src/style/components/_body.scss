@@ -1,0 +1,189 @@
+.bodyOfPage{
+    margin: 50px 0 0 80px;
+
+    .contentOfBody{
+        display: flex;
+        justify-content: space-between;
+        .left{
+
+            .contentOfLeft{
+                
+                .bigTitle{
+                    
+                    h2{
+                        margin: 0;
+                        padding: 0;
+                        font-size: 2.4em;
+                        font-weight: 600;
+                    }
+                }
+                .strangeInputs{
+                    width: 299px;
+                    height: 70px;
+                    margin-top: 70px;
+                    background: white;
+                    box-shadow: 0px 10px 13px -7px #e0e0e0, -14px 9px 50px 7px #e0e0e0;
+                 
+                    .speContent{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .theStrangeInput{
+                            width: 75%;
+                            input{
+                                width: 100%;
+                                border: none;
+                                outline: none;
+                                background: transparent;
+                                height: 100%;
+                                padding: 0 27px;
+                            }
+                        }
+                        .GObuttonParent{
+                            width: 34%;
+                            position: relative;
+                            button{
+                                border: none;
+                                outline: none;
+                                background: transparent;
+                                height: 100%;
+                                width: 100%;
+                                font-size: 1.62em;
+                                position: absolute;
+                                z-index: 2;
+                            }
+                            .newBloc{
+                                position: absolute;
+                                width: 100%;
+                            }
+                            .maronBloc{
+                                height: 100%;
+                                transition: 0.2s;
+                            }
+                            .greenBloc{
+                                height: 100%;
+                                transition: 0.2s;
+                                z-index: 1;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+        .right{
+            .contentOfRight{
+
+                .Pics{
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    .pic{
+                        border-radius: 16px;
+                        overflow: hidden;
+                        height: 356px;
+                        position: relative;
+                        margin-right: 55px;
+                        transition: 0.3s;
+                        
+                        .proffision{
+                            position: absolute;
+                            bottom: 25px;
+                            color: white;
+                            p{
+                                opacity: 0.9;
+                            }
+                        }
+                        .verticaleProffision{
+                            p{
+                                animation: cling 0.5s forwards;
+                                transform: rotateZ(-90deg);
+                            }
+                            @keyframes cling{
+                                0%{
+                                    opacity: 0;
+                                }
+                                100%{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .horizenaleProfission{
+                            display: flex;
+                            justify-content: space-around;
+                            width: 100%;
+                            align-items: center;
+                            .Points{
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+
+                                p{
+                                    margin: 0;
+                                    padding: 0;
+                                }
+                                .smalltext{
+                                    opacity: 0.8;
+                                    font-size: 0.7em;
+                                }
+                            }
+                        }
+
+                        .gradient{
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            background: linear-gradient(0deg, rgb(0 0 0 / 44%) 0%, rgba(255,255,255,0) 72%);}
+                    }
+                    .normal{
+                        animation: reduce 0.25s forwards;
+                    }
+                    .full{
+                        animation: addA 0.25s forwards;
+                    }
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes reduce {
+    0%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+@keyframes addA {
+    0%{
+        width: 100px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+
+
+@keyframes anotherColorBlocAnim{
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0%;
+    }
+}
+@keyframes greenBlocAnim{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}

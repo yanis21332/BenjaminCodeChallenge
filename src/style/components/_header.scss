@@ -1,0 +1,68 @@
+header{
+    margin: 0 30px;
+    .contentOfHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bigLeftPart{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 74%;
+        }
+        .leftPart{
+
+            .contentOfLeftPart{
+                .dot{
+                    color: #b4c9a9;
+                }
+                h3{
+                    opacity: 0.8;
+                }
+            }
+        }
+        .middlePart{
+            width: 285px;
+            margin-right: 250px;
+            margin-left: 15px;
+
+            .contentOfMiddlePart{
+                
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+                    padding: 0;
+                    width: 100%;
+                    li{
+                        color: #8b8a8f;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+        .rightPart{
+
+            .contentOfRightPart{
+
+                .inputs{
+                    .loginButton{
+                        border: none;
+                        outline: none;
+                        background: transparent;
+                        padding: 2px 20px;
+                        opacity: 0.9;
+                    }
+                    .freeTrialButton{
+                        border: none;
+                        background: #1e1d30;
+                        color: #fcfafa;
+                        padding: 8px 22px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
